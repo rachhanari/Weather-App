@@ -1,0 +1,153 @@
+:root {
+    --padding: 1.5rem;
+    --margin: 1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app_container {
+    overflow: hidden;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+}
+
+.min_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding);
+}
+
+.searchOfCity {
+    margin: var(--margin);
+    display: flex;
+    height: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+#city {
+    width: 70%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#getWether_button {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: #2186f1db;
+    align-items: center;
+    display: flex;
+}
+
+.weather-info {
+    display: none;
+    width: 80%;
+    height: 82vh;
+    padding: var(--padding);
+    background-color: #f7f6f6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#weather-header {
+    text-align: center;
+}
+
+#city-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.weather_time {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 45px;
+    margin: 0 20px;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+
+.weather-details_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather_temp_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55%;
+}
+
+.weather_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    font-weight: bold;
+    color: green;
+}
+
+.weather_img img {
+    width: 80px;
+}
+
+.feels_like {
+    display: flex;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+#feels_like_temp {
+    color: orange;
+    font-size: 2vw;
+}
+
+.weather_description {
+    padding: 0 1.5em;
+}
+
+.details {
+    margin: var(--margin);
+    padding: var(--padding);
+}
+
+.tamp_details_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.tamp_details {
+    flex: 0 0 40%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin: 2rem;
+}
